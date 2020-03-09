@@ -1,0 +1,40 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: ##181a1b;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    /* breken de breedte(width) om 4x300px img te doen */
+    width: calc(1200px + 3em);
+    margin: 0 auto;
+}
+main img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 0 3em;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: left;
+}
+
+#num2 {
+    background: purple;
+    color: white;
+    transition-duration: 0.4s;
+    border-radius: 2.5em;
+ }
+  #num2.contextmenu {
+    background: red;
+    color: black;
+    height: 50px;
+    border-radius: 5em;
+    transition-duration: 0.4s;
+  }
